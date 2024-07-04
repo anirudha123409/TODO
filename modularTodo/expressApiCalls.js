@@ -77,7 +77,7 @@ app.delete("/todo/delete/:id", async (req, res) => {
       res.status(400).send({ message: "Error in Deleting" });
     }
   } catch (error) {
-    handleErrorResponse(res, error, 400);
+    handleErrorResponse(res, error);
   }
 });
 
